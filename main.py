@@ -5,11 +5,11 @@ bot=telebot.TeleBot("2091627071:AAHzgJf4S1i_UBGA2ciAcUJdxTuLj1R0cho")
 
 @bot.message_handler(commands=["start"])
 def send_welcome(message):
-    bot.reply_to(message,"හායි, මමයි ඔයාලගෙ පණුවා HA")
+    bot.reply_to(message,"හායි, මමයි ඔයාලගෙ පණුවා HA DGNS")
 
 @bot.message_handler(commands=["hello"])
 def send_hello(message):
-    bot.send_message(message,"මොන හොදින් ද අනෙ. ඇදිරිනීතිය නිසා කොලයක්වත් කන්න බැ ගනන් වැඩි")
+    bot.reply_to(message,"මොන හොදින් ද අනෙ. ඇදිරිනීතිය නිසා කොලයක්වත් කන්න බැ ගනන් වැඩි")
 
 @bot.message_handler(commands=["help"])
 def send_help(message):
