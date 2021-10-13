@@ -5,7 +5,7 @@ bot=telebot.TeleBot("2091627071:AAHzgJf4S1i_UBGA2ciAcUJdxTuLj1R0cho")
 
 @bot.message_handler(commands=["start"])
 def send_welcome(message):
-    bot.reply_to(message,"හායි, මමයි ඔයාලගෙ පණුවා")
+    bot.reply_to(message,"හායි, මමයි ඔයාලගෙ පණුවා HA")
 
 @bot.message_handler(commands=["hello"])
 def send_hello(message):
