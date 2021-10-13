@@ -22,11 +22,13 @@ def send_message(message):
 
 @bot.message_handler(commands=["ytdownload"])
 def send_message(message):
+    bot.reply_to(message,"Downloading")
     bot.reply_to(message,x=input("Enter Your Link :"))
-    url = input("Enter Your Link :")  # https://www.youtube.com/watch?v=-GmJLI122ZM
+    url = x
     youtube = pytube.YouTube(url)
     video = youtube.streams.first()
     video = youtube.streams.get_lowest_resolution()
     bot.send_video(video)
+    bot.reply_to(message,"Download Succesfull!")
 
 bot.polling()
